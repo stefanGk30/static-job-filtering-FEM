@@ -62,6 +62,7 @@ async function setUI() {
   const listings = await response.json();
 
   displayListings(listings);
+
   const allListings = document.querySelectorAll('.single-listing');
   allListings.forEach((singleListing) => {
     singleListing.addEventListener('click', (e) => {
